@@ -116,10 +116,10 @@
 // console.log(isPangram( 'The five boxing wizards is lazy' )); // false
 
 
-const pick = ( arr ) => {
-    const random = Math.floor( Math.random() * arr.length );
-    return arr[random];
-}
+// const pick = ( arr ) => {
+//     const random = Math.floor( Math.random() * arr.length );
+//     return arr[random];
+// }
 
 
 
@@ -150,3 +150,94 @@ const pick = ( arr ) => {
 // }
 
 // console.log(getCard());
+
+
+// =================== SCOPE, HOC, CALLBACKS =======================
+
+// const doubleArray = ( arr ) => {
+
+//     let doubled = []
+
+//     for ( let i = 0; i < arr.length; i++ )
+//     {
+//         let double = arr[ i ] * 2;
+//         doubled.push(double)
+//     }
+
+//     return doubled
+// }
+
+// console.log(doubleArray([2, 4, 6, 8]));
+
+
+// ================== HOC =====================
+
+// function myScream (scream) {
+//     scream();
+//     scream();
+// }
+
+// function screamer () {
+//     console.log('HAAAAAAAAAAAAAAAAAAAAAAAAAAAAA');
+// };
+
+// myScream( screamer );
+
+
+// function greet () {
+//     console.log('Hello!');
+// }
+
+// function greetMe ( action, num ) {
+//     for ( let i = 0; i < num; i++ )
+//     {
+//         action();
+//     }
+// }
+
+// console.log(greetMe( greet, 10 ));
+
+// function morning () {
+//     console.log('Good Morning');
+// }
+
+// function night () {
+//     console.log('Good Night');
+// }
+
+// function greet (f1, f2) {
+//     let random = Math.random();
+//     console.log( random );
+    
+//     if ( random < 0.5 )
+//     {
+//         f1();
+//     } else
+//     {
+//         f2()
+//     }
+// }
+
+// console.log(greet(morning, night));
+
+
+// function makeBetween ( x, y ) {
+//     return function ( num ) {
+//         return num >= x && num <= y;
+//     }
+// }
+
+// const isChild = makeBetween( 0, 18 )
+
+// console.log( isChild( 0 ) );
+
+
+// function areaOfCircle ( r ) {
+//     let PI = 3.142;
+//     return 2 * PI * r
+// }
+
+// console.log(areaOfCircle(10));
+
+
+
