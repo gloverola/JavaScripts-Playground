@@ -241,3 +241,169 @@
 
 
 
+// const books = [
+//     {
+//         title: "Rece on the go",
+//         price: 40.00
+//     },
+//     {
+//         title: "Recing man",
+//         price: 30.00
+//     },
+//     {
+//         title: "Rece with me",
+//         price: 50.00
+//     },
+//     {
+//         title: "Rece here",
+//         price: 20.00
+//     },
+// ]
+
+
+// let total = 0
+
+// for ( let i = 0; i < books.length; i++ )
+// {
+    
+//     total += books[i].price
+// }
+
+// console.log(total);
+
+// const numbers = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 ]
+
+// const newNumbers = numbers.filter( number => number % 2 === 0);
+
+// console.log(newNumbers);
+
+
+// ===================== Reduce ===========================
+
+// const numbers = [ 20, 30, 49, 323, 435, 54 ];
+
+
+
+// const tot = numbers.reduce( ( total, value ) => {
+//     return total + value;
+// } )
+
+// console.log(tot);
+
+// ==== Find Maximum Value =====
+
+// const maxVal = [ 50, 78, 69, 89, 93, 98 ];
+
+// const maximum = maxVal.reduce( ( max, currVal ) => {
+//     // if ( currVal > max ) return currVal
+//     // return max
+//     return Math.max( max, currVal );
+// } )
+
+// console.log(maximum);
+
+// ============ Spread Operator =============
+
+// Array
+
+// const cephalopods = [ 'dumbo octopus', 'humboldt squid', 'flamboyant cuttlefish' ];
+
+// const gastropods = [ 'giant african snail', 'banana slug', 'variable neon slug' ];
+
+// const cnidaria = [ 'fire coral', 'moon jelly' ];
+
+// const mollusca = [ ...cephalopods, ...gastropods ];
+
+// console.log( mollusca);
+
+// Objects
+
+// const feline = {
+//     legs: 4,
+//     family: "Felidae"
+// };
+
+// const canine = {
+//     family: "Canine",
+//     furry: true
+// }
+
+// const dog = {
+//     ...canine,
+//     isPet: true,
+// }
+
+// console.log(dog);
+
+// ================= Destructuring =================
+
+// Array
+
+// const raceResults = [
+//     'Eluid Kipchoge',
+//     'Feyisa Lelisa',
+//     'Galen Rupp',
+//     'Ghirmay Ghebreslassie',
+//     'Alphonce Simbu',
+//     'Jared Ward'
+// ];
+
+
+// const [ gold, silver, bronze ] = raceResults;
+
+// console.log( bronze );
+
+// Objects
+
+// const runner = {
+//     first: "Eluid",
+//     last: "Kipchoge",
+//     country: "Kenya",
+//     title: "Elder of the Order of the Golden Heart of Kenya"
+// }
+
+// const { first, last, ...other } = runner;
+
+// console.log(other.title);
+
+
+// ===== Nested Destructuring =======
+
+// const results = [
+//   {
+//     first: "Eluid",
+//     last: "Kipchoge",
+//     country: "Kenya",
+//   },
+//   {
+//     first: "Feyisa",
+//     last: "Lilesa",
+//     country: "Ethiopa",
+//   },
+//   {
+//     first: "Galen",
+//     last: "Rupp",
+//     country: "United States",
+//   },
+// ];
+
+// const [ { first: goldWinner }, , { country } ] = results;
+
+// console.log(country);
+
+
+// ======== Destructuring Parameters ========
+
+// const runner = {
+//     first: "Eluid",
+//     last: "Kipchoge",
+//     country: "Kenya",
+//     title: "Elder of the Order of the Golden Heart of Kenya"
+// }
+
+// const print = ( person ) => {
+//     const { first, last, title } = person;
+//     console.log( `${ first } ${ last }, ${ title }` );
+// };
+
+// print( runner );
