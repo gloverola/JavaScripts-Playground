@@ -14,3 +14,15 @@ class user {
 }
 
 new user().logName();
+
+function greet(age) {
+    let name = "Glover";
+     return function() {
+         console.log(`My name is ${name}, I'm ${age} years old`);
+     }
+}
+
+const aboutMe = greet(30);
+
+aboutMe();
+
